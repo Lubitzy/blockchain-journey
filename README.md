@@ -1,57 +1,124 @@
-# Sample Hardhat 3 Beta Project (`mocha` and `ethers`)
+# 🔗 Blockchain Journey
 
-This project showcases a Hardhat 3 Beta project using `mocha` for tests and the `ethers` library for Ethereum interactions.
+> Personal blockchain development portfolio — from Node.js backend developer to Web3 engineer.
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+## 👨‍💻 About
 
-## Project Overview
+A backend developer (Node.js) transitioning into **Blockchain Development**.  
+Focused on smart contract development, on-chain automation, and DeFi tooling.
 
-This example project includes:
+Currently building real projects on Ethereum — from local development to live testnet deployments.
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using `mocha` and ethers.js
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+## 🛠️ Tech Stack
 
-## Usage
+- **Smart Contract**: Solidity, OpenZeppelin
+- **Development**: Hardhat v3, Ethers.js v6
+- **Network**: Ethereum, Sepolia Testnet
+- **Backend**: Node.js, JavaScript (ES Module)
 
-### Running Tests
+## 📦 Projects
 
-To run all the tests in the project, execute the following command:
+### 1. 🏦 SimpleBank
 
-```shell
-npx hardhat test
+A decentralized banking smart contract built on Ethereum.
+
+- Deposit & withdraw ETH
+- Balance tracking per wallet using `mapping`
+- Event emission on every transaction
+- `onlyOwner` modifier for access control
+
+**Concepts**: Solidity, mapping, events, modifiers, payable functions
+
+---
+
+### 2. 🪙 LubiToken (LUBI) — Live on Sepolia!
+
+A custom ERC-20 token deployed to Ethereum Sepolia testnet.
+
+- Total initial supply: 1,000,000 LUBI
+- Max supply cap: 10,000,000 LUBI (inflation-resistant)
+- Owner-controlled mint with supply cap enforcement
+- Public burn mechanism for deflationary tokenomics
+- **Live Contract**: [`0x7b99e25E48B38843B172C4599Da45F9718140a00`](https://sepolia.etherscan.io/address/0x7b99e25E48B38843B172C4599Da45F9718140a00)
+
+**Concepts**: ERC-20 standard, OpenZeppelin, tokenomics, mint/burn
+
+---
+
+### 3. 🤖 Wallet Monitor Bot
+
+A 24/7 on-chain automation bot that monitors wallet activity in real time.
+
+- Detects incoming & outgoing ETH transfers instantly
+- Block polling mechanism for reliable detection
+- Easily configurable for any wallet address
+
+**Concepts**: Ethers.js, block polling, provider, transaction monitoring
+
+---
+
+### 4. 🔍 Token Monitor Bot
+
+An advanced monitoring bot that tracks both ETH and ERC-20 transfers simultaneously.
+
+- Decodes Transfer events directly from smart contract logs
+- Monitors multiple asset types in a single bot
+- Transaction receipt analysis for deep on-chain visibility
+
+**Concepts**: Event decoding, transaction receipt, Transfer topic, log parsing
+
+## 🚀 Getting Started
+
+```bash
+# Clone repository
+git clone https://github.com/Lubitzy/blockchain-journey.git
+cd blockchain-journey
+
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.example .env
+# Fill in ALCHEMY_URL and PRIVATE_KEY in .env
+
+# Run local blockchain
+npx hardhat node
+
+# Deploy to local network
+node scripts/deploy.js
+
+# Deploy to Sepolia testnet
+node scripts/deploySepolia.js
+
+# Run wallet monitor bot
+node scripts/walletMonitor.js
+
+# Run token monitor bot
+node scripts/tokenMonitor.js
 ```
 
-You can also selectively run the Solidity or `mocha` tests:
+## 📡 Live Deployments
 
-```shell
-npx hardhat test solidity
-npx hardhat test mocha
-```
+| Contract         | Network         | Address                                      | Explorer                                                                                             |
+| ---------------- | --------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| LubiToken (LUBI) | Sepolia Testnet | `0x7b99e25E48B38843B172C4599Da45F9718140a00` | [View on Etherscan](https://sepolia.etherscan.io/address/0x7b99e25E48B38843B172C4599Da45F9718140a00) |
 
-### Make a deployment to Sepolia
+## 📈 Roadmap
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+- [x] Smart contract fundamentals (Solidity)
+- [x] ERC-20 token development & tokenomics
+- [x] On-chain automation & monitoring bots
+- [x] Live deployment to Sepolia testnet
+- [ ] NFT (ERC-721) development
+- [ ] DeFi protocol integration (Uniswap, Aave)
+- [ ] Airdrop automation bot
+- [ ] Deploy to Ethereum mainnet
 
-To run the deployment to a local chain:
+## 📬 Open for Work
 
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
+Available for freelance blockchain projects — smart contract development, Web3 tooling, and on-chain automation.  
+Feel free to reach out for collaborations or project inquiries.
 
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
+---
 
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
-
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
-
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+⭐ Star this repo if you find it useful!

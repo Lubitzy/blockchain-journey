@@ -10,6 +10,8 @@ export default defineConfig({
   },
   networks: {
     sepolia: {
+      type: "http",
+      chainType: "l1",
       url: process.env.ALCHEMY_URL || "",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
