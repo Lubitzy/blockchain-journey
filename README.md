@@ -67,6 +67,19 @@ An advanced monitoring bot that tracks both ETH and ERC-20 transfers simultaneou
 
 **Concepts**: Event decoding, transaction receipt, Transfer topic, log parsing
 
+---
+
+### 5. 🎁 LubiAirdrop — Merkle Tree Airdrop System
+
+A gas-efficient airdrop contract using Merkle Tree for whitelist verification.
+
+- Merkle Tree whitelist — supports unlimited wallets with single root hash
+- Double-claim protection per wallet
+- Bot automation for multi-wallet claiming
+- Owner controls: pause, resume, withdraw remaining tokens
+
+**Concepts**: Merkle Tree, MerkleProof, gas optimization, airdrop mechanics
+
 ## 🚀 Getting Started
 
 ```bash
