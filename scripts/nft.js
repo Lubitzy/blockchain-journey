@@ -33,16 +33,17 @@ async function main() {
     console.log("Mint Price:", ethers.formatEther(await nft.mintPrice()), "ETH");
 
     // Mint NFT #0 untuk user1
-    console.log("\n🎨 Minting NFT #0 untuk User1...");
+    // Mint NFT #0 dengan metadata IPFS sungguhan!
+    console.log("\n🎨 Minting NFT #0 dengan metadata IPFS...");
     const mint0 = await nft.connect(user1).mint(
         await user1.getAddress(),
-        "https://metadata.example.com/nft/0",
+        "ipfs://QmXYMyuvNTioSySMxxGFdsfh4ZSMN5VCM8d7VttYFyxgo4",
         { value: ethers.parseEther("0.01") }
     );
     await mint0.wait();
     console.log("✅ NFT #0 berhasil di-mint!");
     console.log("👤 Owner NFT #0:", await nft.ownerOf(0));
-    console.log("🔗 Metadata    :", await nft.tokenURI(0));
+    console.log("🔗 tokenURI    :", await nft.tokenURI(0));
 
     // Mint NFT #1 untuk user2
     console.log("\n🎨 Minting NFT #1 untuk User2...");

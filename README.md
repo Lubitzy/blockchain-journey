@@ -99,9 +99,10 @@ node scripts/tokenMonitor.js
 
 ## 📡 Live Deployments
 
-| Contract         | Network         | Address                                      | Explorer                                                                                             |
-| ---------------- | --------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| LubiToken (LUBI) | Sepolia Testnet | `0x7b99e25E48B38843B172C4599Da45F9718140a00` | [View on Etherscan](https://sepolia.etherscan.io/address/0x7b99e25E48B38843B172C4599Da45F9718140a00) |
+| Contract         | Network         | Address                                      | Explorer                                                                                                                                                                                          |
+| ---------------- | --------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LubiToken (LUBI) | Sepolia Testnet | `0x7b99e25E48B38843B172C4599Da45F9718140a00` | [View on Etherscan](https://sepolia.etherscan.io/address/0x7b99e25E48B38843B172C4599Da45F9718140a00)                                                                                              |
+| SimpleNFT (SNFT) | Sepolia Testnet | `0xab7A414318615e689A5c369bC256dEb34E0352e4` | [Etherscan](https://sepolia.etherscan.io/address/0xab7A414318615e689A5c369bC256dEb34E0352e4) · [OpenSea](https://testnets.opensea.io/assets/sepolia/0xab7A414318615e689A5c369bC256dEb34E0352e4/0) |
 
 ## 📈 Roadmap
 

@@ -1,0 +1,23 @@
+{
+    "name": "Lubi Genesis #0",
+    "description": "The first NFT from Lubi's blockchain journey. A milestone in becoming a Web3 developer.",
+    "image": "https://placehold.co/500x500/1a1a2e/ffffff?text=LUBI+NFT+%230",
+    "attributes": [
+        {
+            "trait_type": "Series",
+            "value": "Genesis"
+        },
+        {
+            "trait_type": "Edition",
+            "value": "First"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Legendary"
+        },
+        {
+            "trait_type": "Creator",
+            "value": "Lubi"
+        }
+    ]
+}
